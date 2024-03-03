@@ -26,7 +26,7 @@
 	<div>
 		<h2 class="text-center">Breakfast</h2>
 		<figure>
-			<img src="/breakfast-2.jpg" alt="" />
+			<img src="/assets/breakfast-2.jpg" alt="" />
 			<figcaption>
 				Old-fashioned oats mixed with an egg, butter, mixed nuts, raw pumpkin seeds, canned pumpkin
 				puree, chia seeds, sunflower seeds, hemp hearts, cinnamon, salt. Dried prunes, dried figs,
@@ -39,7 +39,7 @@
 	<div>
 		<h2 class="text-center">Lunch</h2>
 		<figure>
-			<img src="/canned-lunch.jpg" alt="" />
+			<img src="/assets/canned-lunch.jpg" alt="" />
 			<figcaption>
 				Whole grain English muffin with a slice of cheddar cheese, canned chicken, canned salmon,
 				canned tuna, canned beans (assorted), canned whole kernel corn, canned carrots, red pepper
@@ -51,7 +51,7 @@
 	<div>
 		<h2 class="text-center">Dinner</h2>
 		<figure>
-			<img src="/canned-dinner.jpg" alt="" />
+			<img src="/assets/canned-dinner.jpg" alt="" />
 			<figcaption>
 				Canned spinach, slice of pepperjack cheese, canned green beans, canned asparagus, canned
 				diced tomato, canned mushrooms, canned green chilis, canned sardines, canned mackerel, hemp

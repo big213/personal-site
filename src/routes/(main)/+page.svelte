@@ -5,7 +5,7 @@
 <figure class="text-center">
 	<div class="avatar">
 		<div class="w-36 rounded">
-			<img src="smiling-at-lands-end3.jpeg" alt="" />
+			<img src="/assets/central-park1.jpg" alt="" />
 		</div>
 	</div>
 </figure>
