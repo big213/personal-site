@@ -1,0 +1,64 @@
+<script lang="ts">
+	import Footer from '$lib/components/footer.svelte';
+	const lastUpdated = new Date('2023-12-11').toDateString();
+</script>
+
+<article class="prose">
+	<h1 class="text-center">Canned Food</h1>
+	<p>
+		I eat a lot of canned foods as part of my normal diet, which is something many people find
+		bizarre about me. See below for some pictures of what I normally eat on a daily basis. There are
+		some variations here and there based on the availability and cost of ingredients (I also try to
+		keep my food costs reasonable without compromising on quality).
+	</p>
+	<p>
+		Please note that not all ingredients shown are canned, but everything is prepared with use of a
+		microwave or hot water kettle. I also get some perishables and non-canned ingredients from
+		websites or local grocery stores, and I eat some fresh fruits and string cheese throughout the
+		day as a snack.
+	</p>
+	<p>
+		Disclaimer: I do not necessarily recommend that you follow what I do, but this diet has worked
+		for me so far since I started around January 2022. I think canned ingredients are great for a
+		variety of reasons, and I encourage people to use more of them as part of their daily cooking.
+	</p>
+	<hr />
+	<div>
+		<h2 class="text-center">Breakfast</h2>
+		<figure>
+			<img src="/breakfast-2.jpg" alt="" />
+			<figcaption>
+				Old-fashioned oats mixed with an egg, butter, mixed nuts, raw pumpkin seeds, canned pumpkin
+				puree, chia seeds, sunflower seeds, hemp hearts, cinnamon, salt. Dried prunes, dried figs,
+				whole milk greek yogurt, and coconut flakes added as a topping. Prepared with hot water
+				kettle.
+			</figcaption>
+		</figure>
+	</div>
+	<hr />
+	<div>
+		<h2 class="text-center">Lunch</h2>
+		<figure>
+			<img src="/canned-lunch.jpg" alt="" />
+			<figcaption>
+				Whole grain English muffin with a slice of cheddar cheese, canned chicken, canned salmon,
+				canned tuna, canned beans (assorted), canned whole kernel corn, canned carrots, red pepper
+				flakes for seasoning. Prepared with microwave.
+			</figcaption>
+		</figure>
+	</div>
+	<hr />
+	<div>
+		<h2 class="text-center">Dinner</h2>
+		<figure>
+			<img src="/canned-dinner.jpg" alt="" />
+			<figcaption>
+				Canned spinach, slice of pepperjack cheese, canned green beans, canned asparagus, canned
+				diced tomato, canned mushrooms, canned green chilis, canned sardines, canned mackerel, hemp
+				hearts, roasted pumpkin seeds, extra-virgin olive oil, ghost pepper (ground). Prepared with
+				microwave.
+			</figcaption>
+		</figure>
+	</div>
+	<Footer {lastUpdated} />
+</article>
