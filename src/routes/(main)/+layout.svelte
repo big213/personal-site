@@ -17,8 +17,20 @@
 
 	const navArray: NavItem[] = [
 		{ text: 'Home', path: '/' },
+		{ text: 'Projects', path: '/projects' },
+		{ text: 'Angel Investing', path: '/angel-investing' },
 		{ text: 'Canned Food', path: '/canned' },
 		{ text: 'Apartment', path: '/apartment' }
+		// { text: 'Citi Bike', path: '/citibike' },
+		/*
+		{
+			text: 'More',
+			children: [
+				{ text: "Rubik's Cube", path: '/rubiks-cube' },
+				{ text: 'TheCubicle', path: '/the-cubicle' }
+			]
+		}
+		*/
 	];
 </script>
 
@@ -44,6 +56,10 @@
 				tabindex="-1"
 				class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
 			>
+				<li>
+					<div>James Chang</div>
+				</li>
+				<hr />
 				{#each navArray as { text, path, children }}
 					<li>
 						{#if children}
@@ -60,7 +76,14 @@
 				{/each}
 			</ul>
 		</div>
-		<a class="btn btn-ghost text-xl" href="/">James Chang</a>
+		<a class="btn btn-ghost text-xl" href="/">
+			<div class="avatar">
+				<div class="w-10 rounded-full">
+					<img src="/assets/central-park1.jpg" alt="James Chang" />
+				</div>
+			</div>
+			<span class="hidden sm:flex">James Chang</span></a
+		>
 	</div>
 	<div class="navbar-center hidden lg:flex">
 		<ul class="menu menu-horizontal px-1">
@@ -83,13 +106,13 @@
 		</ul>
 	</div>
 	<div class="navbar-end">
-		<select data-choose-theme class="select select-ghost mr-4">
+		<select data-choose-theme class="select select-ghost select-sm mr-4">
 			<option value="dark">Dark</option>
 			<option value="light">Light</option>
 			<option value="cupcake">Cupcake</option>
 		</select>
-		<a class="btn mr-4" href="/contact">Contact</a>
-		<a class="btn btn-circle" href="https://github.com/big213/personal-site">
+		<a class="btn btn-sm mr-4" href="/contact">Contact</a>
+		<a class="btn btn-sm btn-circle" href="https://github.com/big213/personal-site">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 24 24"
