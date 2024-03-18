@@ -10,7 +10,7 @@ Here are some of the side projects I'm working on that I can share, in no partic
 
 I enjoy building web applications, and I made a lot of the below projects simply wanted to try to build something cool. If you have an idea for a website, please feel free to [get in touch](/contact), and I would be more than happy to discuss!
 
-* [j8g.com (this site)](https://j8g.com) - It's my personal website, and I use it to experiment with new web frameworks and features. Thanks for being a test subject.
+* [j8g.com (this site)](https://j8g.com) - It's my personal website, and I use it to experiment with new web frameworks and features. Thanks for being a test subject. [Github Repository](https://github.com/big213/personal-site)
 
 * [OSRSRecords.com](https://osrsrecords.com) - Open source website for keeping track of records within the Old School RuneScape speedrunning community [Github Repository](https://github.com/big213/OSRSRecords)
 

@@ -47,7 +47,7 @@ I don't necessarily recommend eating exactly like I do. But it's worked decently
 	<figure>
 		<img src="/assets/fresh-fruits1.jpg" alt="" />
 		<figcaption>
-			I'm a big fan of Mexican guavas, persimmons, and kiwis (for daily Vitamin C), and then I will either alternate days between apples and some other fruit (in this picture, D'Anjou pears).
+			I'm a big fan of Mexican guavas, persimmons, kiwis, and mandarins (for daily Vitamin C), and then I will usually alternate days between apples and some other fruit (in this photo, D'Anjou pears).
 		</figcaption>
 	</figure>
 </div>

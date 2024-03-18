@@ -7,11 +7,11 @@ Hey, I'm James.
 
 I live in Manhattan, New York City.
 
-I spent my childhood in New Jersey and Westchester County, New York.
+I grew up in New Jersey and Westchester County, New York.
 
 I went to NYU (Class of '14), where I majored in Finance, Statistics, and minored in Computer Science.
 
-I sell Rubik's Cubes and related twisty puzzles for a living. I co-founded this business in 2011 while I was studying at NYU.
+I sell Rubik's Cubes and related twisty puzzles for a living. I co-founded this business in 2011 while I was studying at NYU. Our website is located at [TheCubicle.com](https://thecubicle.com).
 
 I can solve a Rubik's Cube in about 30 seconds.
 
