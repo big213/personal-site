@@ -26,7 +26,7 @@
 		<li>Discord (DM): .yuzernaim</li>
 		<li>
 			Twitter:
-			<a href="https://twitter.com/Yuzernaim">https://twitter.com/Yuzernaim</a>
+			<a href="https://twitter.com/jameschang12341">https://twitter.com/jameschang12341</a>
 		</li>
 		<li>
 			Instagram:
@@ -54,7 +54,7 @@
 		</li>
 		<li>
 			Telegram:
-			<a href="https://t.me/yuzernaim">@yuzernaim</a>
+			<a href="https://t.me/jameschang21">@jameschang21</a>
 		</li>
 	</ul>
 	<Footer {lastUpdated} />
