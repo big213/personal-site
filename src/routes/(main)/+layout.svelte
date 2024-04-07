@@ -9,6 +9,10 @@
 		themeChange(false);
 	});
 
+	export let data;
+
+	const navigationItemData = data.layout;
+
 	type NavItem = {
 		text: string;
 		path?: string | null;
@@ -16,12 +20,10 @@
 	};
 
 	const navArray: NavItem[] = [
-		{ text: 'Home', path: '/' },
-		{ text: 'Projects', path: '/projects' },
-		{ text: 'Angel Investing', path: '/angel-investing' },
-		{ text: 'Canned Food', path: '/canned' },
-		{ text: 'Apartment', path: '/apartment' }
-		// { text: 'Citi Bike', path: '/citibike' },
+		...navigationItemData.edges.map((edge: any) => ({
+			text: edge.node.text,
+			path: edge.node.path ?? (edge.node.article ? `/a/${edge.node.article.handle}` : '/')
+		}))
 		/*
 		{
 			text: 'More',
@@ -111,7 +113,7 @@
 			<option value="light">Light</option>
 			<option value="cupcake">Cupcake</option>
 		</select>
-		<a class="btn btn-sm mr-4" href="/contact">Contact</a>
+		<a class="btn btn-sm mr-4" href="/a/contact">Contact</a>
 		<a class="btn btn-sm btn-circle" href="https://github.com/big213/personal-site">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
