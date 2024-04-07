@@ -81,7 +81,10 @@
 		<a class="btn btn-ghost text-xl" href="/">
 			<div class="avatar">
 				<div class="w-10 rounded-full">
-					<img src="/assets/central-park1.jpg" alt="James Chang" />
+					<img
+						src="https://cdn.j8g.com/NO3pqYCIrseMqkla4khZuEcdw7J2/Cf7t_RQrvxdj1iUc5kU-D/central-park1.jpg"
+						alt="James Chang"
+					/>
 				</div>
 			</div>
 			<span class="hidden sm:flex">James Chang</span></a
