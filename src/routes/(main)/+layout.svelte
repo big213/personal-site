@@ -2,11 +2,17 @@
 	import './styles.css';
 	import BackToTop from '$lib/components/backToTop.svelte';
 	import { onMount } from 'svelte';
-
+	import { navigating } from '$app/stores';
 	import { themeChange } from 'theme-change';
+	import { loading } from '$lib/stores/loading';
+	import { modal } from '$lib/stores/modal';
+
+	let modalElement: any;
 
 	onMount(() => {
 		themeChange(false);
+		modalElement = document.getElementById('modal-1');
+		// modalElement.showModal();
 	});
 
 	export let data;
@@ -34,6 +40,14 @@
 		}
 		*/
 	];
+
+	$: {
+		if (modalElement) {
+			$modal ? modalElement.showModal() : modalElement.close();
+		}
+	}
+
+	$: $loading = !!$navigating;
 </script>
 
 <div class="navbar bg-base-100">
@@ -89,6 +103,9 @@
 			</div>
 			<span class="hidden sm:flex">James Chang</span></a
 		>
+		{#if $loading}
+			<span class="loading loading-dots loading-md"></span>
+		{/if}
 	</div>
 	<div class="navbar-center hidden lg:flex">
 		<ul class="menu menu-horizontal px-1">
@@ -112,7 +129,7 @@
 	</div>
 	<div class="navbar-end">
 		<select data-choose-theme class="select select-ghost select-sm mr-4">
-			<option value="dark">Dark</option>
+			<option value="">Dark</option>
 			<option value="light">Light</option>
 			<option value="cupcake">Cupcake</option>
 		</select>
@@ -137,3 +154,20 @@
 	<div style="height: 300px">&nbsp;</div>
 </div>
 <BackToTop />
+<dialog id="modal-1" class="modal modal-bottom sm:modal-middle">
+	<div class="modal-box">
+		<h3 class="font-bold text-lg">Hello!</h3>
+		<p class="py-4">Press ESC key or click the button below to close</p>
+		<div class="text-center">
+			<div class="relative inline-flex">
+				<img
+					src="https://cdn.j8g.com/NO3pqYCIrseMqkla4khZuEcdw7J2/Cf7t_RQrvxdj1iUc5kU-D/central-park1.jpg"
+					alt=""
+				/>
+			</div>
+		</div>
+		<div class="modal-action">
+			<button class="btn" on:click={() => ($modal = false)}>Close</button>
+		</div>
+	</div>
+</dialog>
