@@ -25,21 +25,25 @@
 		children?: NavItem[];
 	};
 
+	const visibleItems = navigationItemData.edges.slice(0, 5);
+
+	const remainingItems = navigationItemData.edges.slice(5);
+
 	const navArray: NavItem[] = [
-		...navigationItemData.edges.map((edge: any) => ({
+		...visibleItems.map((edge: any) => ({
 			text: edge.node.text,
 			path: edge.node.path ?? (edge.node.article ? `/a/${edge.node.article.handle}` : '/')
-		}))
-		/*
-		{
-			text: 'More',
-			children: [
-				{ text: "Rubik's Cube", path: '/rubiks-cube' },
-				{ text: 'TheCubicle', path: '/the-cubicle' }
-			]
-		}
-		*/
-	];
+		})),
+		remainingItems.length > 0
+			? {
+					text: 'More',
+					children: remainingItems.map((edge: any) => ({
+						text: edge.node.text,
+						path: edge.node.path ?? (edge.node.article ? `/a/${edge.node.article.handle}` : '/')
+					}))
+				}
+			: null
+	].filter((e) => e);
 
 	$: {
 		if (modalElement) {
